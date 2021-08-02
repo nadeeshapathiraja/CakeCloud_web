@@ -40,6 +40,7 @@
                                         <div class="form-outline">
                                             <h6 class="mb-2 pb-1">First Name: </h6>
                                             <input type="text" id="firstName" name="firstName"
+                                                placeholder="Enter your First name" required
                                                 class="form-control form-control-lg" />
                                         </div>
 
@@ -48,7 +49,8 @@
 
                                         <div class="form-outline">
                                             <h6 class="mb-2 pb-1">Last Name: </h6>
-                                            <input type="text" id="lastName" name="lastName" placeholder=""
+                                            <input type="text" id="lastName" name="lastName"
+                                                placeholder="Enter Your Last Name" required
                                                 class="form-control form-control-lg" />
                                         </div>
 
@@ -60,8 +62,8 @@
 
                                         <div class="form-outline datepicker w-100">
                                             <h6 class="mb-2 pb-1">Birthday: </h6>
-                                            <input type="text" name="birthday" class="form-control form-control-lg"
-                                                id="birthdayDate" />
+                                            <input type="text" name="birthday" placeholder="Enter Your Birthday"
+                                                class="form-control form-control-lg" id="birthdayDate" />
 
                                         </div>
 
@@ -95,8 +97,8 @@
                                 <div class="row">
                                     <div class="form-outline pb-3">
                                         <h6 class="mb-2 pb-1">Address: </h6>
-                                        <input type="text" id="address" name="address" placeholder=""
-                                            class="form-control form-control-lg" />
+                                        <input type="text" id="address" name="address" required
+                                            placeholder="Enter Your Address" class="form-control form-control-lg" />
                                     </div>
                                 </div>
 
@@ -105,7 +107,8 @@
 
                                         <div class="form-outline">
                                             <h6 class="mb-2 pb-1">Email: </h6>
-                                            <input type="email" id="emailAddress" name="emailAddress" placeholder=""
+                                            <input type="email" id="emailAddress" required
+                                                placeholder="Enter Your Email" name="emailAddress" placeholder=""
                                                 class="form-control form-control-lg" />
                                         </div>
 
@@ -114,7 +117,8 @@
 
                                         <div class="form-outline">
                                             <h6 class="mb-2 pb-1">Phone Number: </h6>
-                                            <input type="tel" id="phoneNumber" name="phoneNumber"
+                                            <input type="tel" id="phoneNumber" required
+                                                placeholder="Enter Your Contact Number" name="phoneNumber"
                                                 class="form-control form-control-lg" />
                                         </div>
 
@@ -127,7 +131,8 @@
                                         <div class="form-outline">
                                             <h6 class="mb-2 pb-1">Password: </h6>
                                             <input type="password" id="password" name="password"
-                                                placeholder="Enter your password"="form-control form-control-lg" />
+                                                placeholder="Enter Your Password"
+                                                class="form-control form-control-lg" />
                                         </div>
 
                                     </div>
@@ -135,8 +140,9 @@
 
                                         <div class="form-outline">
                                             <h6 class="mb-2 pb-1">Confirm Password: </h6>
-                                            <input type="password" id="confirm_password" name="confirm_password"
-                                                name="confirm_password" class="form-control form-control-lg" />
+                                            <input type="password" placeholder="Enter Your Passowrd Again"
+                                                id="confirm_password" name="confirm_password" name="confirm_password"
+                                                class="form-control form-control-lg" />
                                         </div>
 
                                     </div>
