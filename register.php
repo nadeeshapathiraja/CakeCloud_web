@@ -18,6 +18,7 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="assets/styles/style.css">
+    <script type="text/javascript" src="assets/js/javascript.js"></script>
 </head>
 
 <body>
@@ -38,7 +39,8 @@
 
                                         <div class="form-outline">
                                             <h6 class="mb-2 pb-1">First Name: </h6>
-                                            <input type="text" id="firstName" class="form-control form-control-lg" />
+                                            <input type="text" id="firstName" name="firstName"
+                                                class="form-control form-control-lg" />
                                         </div>
 
                                     </div>
@@ -46,7 +48,8 @@
 
                                         <div class="form-outline">
                                             <h6 class="mb-2 pb-1">Last Name: </h6>
-                                            <input type="text" id="lastName" class="form-control form-control-lg" />
+                                            <input type="text" id="lastName" name="lastName" placeholder=""
+                                                class="form-control form-control-lg" />
                                         </div>
 
                                     </div>
@@ -57,8 +60,11 @@
 
                                         <div class="form-outline datepicker w-100">
                                             <h6 class="mb-2 pb-1">Birthday: </h6>
-                                            <input type="text" class="form-control form-control-lg" id="birthdayDate" />
+                                            <input type="text" name="birthday" class="form-control form-control-lg"
+                                                id="birthdayDate" />
+
                                         </div>
+
 
                                     </div>
                                     <div class="col-md-6 mb-4">
@@ -66,20 +72,20 @@
                                         <h6 class="mb-2 pb-1">Gender: </h6>
 
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="femaleGender" value="option1" checked />
+                                            <input class="form-check-input" name="gender" type="radio"
+                                                name="inlineRadioOptions" id="femaleGender" value="option1" checked />
                                             <label class="form-check-label" for="femaleGender">Female</label>
                                         </div>
 
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="maleGender" value="option2" />
+                                            <input class="form-check-input" name="gender" type="radio"
+                                                name="inlineRadioOptions" id="maleGender" value="option2" />
                                             <label class="form-check-label" for="maleGender">Male</label>
                                         </div>
 
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="otherGender" value="option3" />
+                                            <input class="form-check-input" type="radio" name="gender"
+                                                name="inlineRadioOptions" id="otherGender" value="option3" />
                                             <label class="form-check-label" for="otherGender">Other</label>
                                         </div>
 
@@ -89,7 +95,8 @@
                                 <div class="row">
                                     <div class="form-outline pb-3">
                                         <h6 class="mb-2 pb-1">Address: </h6>
-                                        <input type="text" id="address" class="form-control form-control-lg" />
+                                        <input type="text" id="address" name="address" placeholder=""
+                                            class="form-control form-control-lg" />
                                     </div>
                                 </div>
 
@@ -98,7 +105,7 @@
 
                                         <div class="form-outline">
                                             <h6 class="mb-2 pb-1">Email: </h6>
-                                            <input type="email" id="emailAddress"
+                                            <input type="email" id="emailAddress" name="emailAddress" placeholder=""
                                                 class="form-control form-control-lg" />
                                         </div>
 
@@ -107,7 +114,8 @@
 
                                         <div class="form-outline">
                                             <h6 class="mb-2 pb-1">Phone Number: </h6>
-                                            <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                                            <input type="tel" id="phoneNumber" name="phoneNumber"
+                                                class="form-control form-control-lg" />
                                         </div>
 
                                     </div>
@@ -118,7 +126,8 @@
 
                                         <div class="form-outline">
                                             <h6 class="mb-2 pb-1">Password: </h6>
-                                            <input type="password" id="password" class="form-control form-control-lg" />
+                                            <input type="password" id="password" name="password"
+                                                placeholder="Enter your password"="form-control form-control-lg" />
                                         </div>
 
                                     </div>
@@ -127,7 +136,7 @@
                                         <div class="form-outline">
                                             <h6 class="mb-2 pb-1">Confirm Password: </h6>
                                             <input type="password" id="confirm_password" name="confirm_password"
-                                                class="form-control form-control-lg" />
+                                                name="confirm_password" class="form-control form-control-lg" />
                                         </div>
 
                                     </div>
