@@ -76,27 +76,27 @@ include("includes/header.php");
                                 </div>
 
                                 <div class="row">
-                                    <div class="form-outline pb-3">
-                                        <h6 class="mb-2 pb-1">Address: </h6>
-                                        <input type="text" id="address" name="address" required
-                                            placeholder="Enter Your Address" class="form-control form-control-lg" />
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <div class="form-outline pb-3">
+                                            <h6 class="mb-2 pb-1">Address: </h6>
+                                            <input type="text" id="address" name="address" required
+                                                placeholder="Enter Your Address" class="form-control form-control-lg" />
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <h6 class="mb-2 pb-1">Phone Number: </h6>
+                                            <input type="tel" id="phoneNumber" required
+                                                placeholder="Enter Your Contact Number" name="phoneNumber"
+                                                class="form-control form-control-lg" />
+                                        </div>
+
                                     </div>
                                 </div>
 
-
-                                <div class="dropdown show">
-                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
-                                        id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        Dropdown link
-                                    </a>
-
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </div>
 
 
                                 <div class="row">
