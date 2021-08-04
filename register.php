@@ -1,5 +1,5 @@
 <?php
-include("/includes/db.php");
+include("includes/db.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -159,7 +159,8 @@ include("/includes/db.php");
                                     </div>
                                     <div class="col-md-6 mb-4 pb-2">
 
-                                        <input class="btn btn-primary btn-lg btn_reg" type="submit" value="SIGN UP" />
+                                        <input class="btn btn-primary btn-lg btn_reg" name="submit" type="submit"
+                                            value="SIGN UP" />
 
                                     </div>
                                 </div>
@@ -176,15 +177,17 @@ include("/includes/db.php");
 
 </html>
 <?php
+if (isset($_POST['submit'])) {
+    $fname = $_REQUEST['firstName'];
+    $lname = $_REQUEST['lastName'];
+    $birthday = $_REQUEST['birthday'];
+    $gender = $_REQUEST['gender'];
+    $address = $_REQUEST['address'];
+    $emailAddress = $_REQUEST['emailAddress'];
+    $phoneNumber = $_REQUEST['phoneNumber'];
+    $password = $_REQUEST['password'];
+    $confirm_password = $_REQUEST['confirm_password'];
+}
 
-$fname = $_REQUEST['firstName'];
-$lname = $_REQUEST['lastName'];
-$birthday = $_REQUEST['birthday'];
-$gender = $_REQUEST['gender'];
-$address = $_REQUEST['address'];
-$emailAddress = $_REQUEST['emailAddress'];
-$phoneNumber = $_REQUEST['phoneNumber'];
-$password = $_REQUEST['password'];
-$confirm_password = $_REQUEST['confirm_password'];
 
 ?>
