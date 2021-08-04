@@ -1,3 +1,6 @@
+<?php
+include("/includes/db.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,8 +35,8 @@
                         <div class="card-body p-4 p-md-5">
 
                             <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 reg_title">Sign Up</h3>
-                            <form method="post" action="#">
 
+                            <form method="post" action="#">
                                 <div class="row">
                                     <div class="col-md-6 mb-4">
 
@@ -161,6 +164,7 @@
                                     </div>
                                 </div>
                             </form>
+
                         </div>
 
                     </div>
@@ -171,3 +175,16 @@
 </body>
 
 </html>
+<?php
+
+$fname = $_REQUEST['firstName'];
+$lname = $_REQUEST['lastName'];
+$birthday = $_REQUEST['birthday'];
+$gender = $_REQUEST['gender'];
+$address = $_REQUEST['address'];
+$emailAddress = $_REQUEST['emailAddress'];
+$phoneNumber = $_REQUEST['phoneNumber'];
+$password = $_REQUEST['password'];
+$confirm_password = $_REQUEST['confirm_password'];
+
+?>
