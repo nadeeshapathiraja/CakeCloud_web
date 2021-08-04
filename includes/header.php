@@ -22,4 +22,5 @@ include("includes/db.php");
     </script>
     <link rel="stylesheet" href="assets/styles/style.css">
     <script type="text/javascript" src="assets/js/javascript.js"></script>
+
 </head>

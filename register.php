@@ -88,16 +88,17 @@ include("includes/header.php");
                                     <div class="col-md-6 mb-4 pb-2">
 
                                         <div class="form-outline">
-                                            <h6 class="mb-2 pb-1">Phone Number: </h6>
-                                            <input type="tel" id="phoneNumber" required
-                                                placeholder="Enter Your Contact Number" name="phoneNumber"
-                                                class="form-control form-control-lg" />
+                                            <h6 class="mb-2 pb-1">Nearest Location: </h6>
+                                            <select class="form-control form-control-lg" name="nearest_location"
+                                                id="nearest_location">
+                                                <option value="volvo">Volvo</option>
+                                                <option value="volvo">Volvo</option>
+                                            </select>
                                         </div>
+
 
                                     </div>
                                 </div>
-
-
 
                                 <div class="row">
                                     <div class="col-md-6 mb-4 pb-2">
@@ -138,8 +139,9 @@ include("includes/header.php");
                                         <div class="form-outline">
                                             <h6 class="mb-2 pb-1">Confirm Password: </h6>
                                             <input type="password" placeholder="Enter Your Passowrd Again"
-                                                id="confirm_password" name="confirm_password" name="confirm_password"
+                                                id="confirm_password" name="confirm_password"
                                                 class="form-control form-control-lg" />
+                                            <span id='message'></span>
                                         </div>
 
                                     </div>
@@ -181,7 +183,18 @@ if (isset($_POST['submit'])) {
     $phoneNumber = $_REQUEST['phoneNumber'];
     $password = $_REQUEST['password'];
     $confirm_password = $_REQUEST['confirm_password'];
-}
+    $nearest_location = $_REQUEST['nearest_location'];
 
+
+    $sql = "INSERT INTO users (first_name,last_name,birthday,gender,address,email,phone_number,password,nerest_location,user_role) VALUES ('$fname','$lname','$birthday','$gender','$address','$emailAddress',$phoneNumber,'$password','$nearest_location','user')";
+
+    if (mysqli_query($con, $sql)) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($con);
+    }
+
+    mysqli_close($con);
+}
 
 ?>
