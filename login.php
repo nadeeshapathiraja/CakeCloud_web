@@ -22,8 +22,8 @@ include("includes/header.php");
 
                                         <div class="form-outline">
                                             <h6 class="mb-2 pb-1">Email: </h6>
-                                            <input type="email" id="emailAddress"
-                                                class="form-control form-control-lg" />
+                                            <input type="email" id="emailAddress" name="emailAddress"
+                                                placeholder="Enter Your Email" class="form-control form-control-lg" />
                                         </div>
 
                                     </div>
@@ -35,7 +35,9 @@ include("includes/header.php");
 
                                         <div class="form-outline">
                                             <h6 class="mb-2 pb-1">Password: </h6>
-                                            <input type="password" id="password" class="form-control form-control-lg" />
+                                            <input type="password" id="password" name="password"
+                                                placeholder="Enter Your Password"
+                                                class="form-control form-control-lg" />
                                         </div>
 
                                     </div>
@@ -75,3 +77,10 @@ include("includes/header.php");
 </body>
 
 </html>
+
+<?php
+$emailAddress = $_REQUEST['emailAddress'];
+$password = $_REQUEST['password'];
+
+
+?>
