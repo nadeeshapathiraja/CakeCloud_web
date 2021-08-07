@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("includes/header.php");
 ?>
 
@@ -79,6 +80,8 @@ include("includes/header.php");
 </html>
 
 <?php
+
+
 $emailAddress = $_REQUEST['emailAddress'];
 $password = $_REQUEST['password'];
 
